@@ -66,7 +66,7 @@ List *swap(List *head, List *node_1, List *node_2)
         return node_1;
     }
 
-    /* next node of node 2 is node 1 or next node of node 1 is node 2 */ 
+    /* the rest case */ 
     pre_node_1->next = node_2;
     pre_node_2->next = node_1;
     tmp_node = node_1->next;
