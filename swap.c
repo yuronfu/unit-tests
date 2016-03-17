@@ -11,8 +11,8 @@ typedef struct List_node List;
 List *swap(List *head, List *node_1, List *node_2)
 {
     /*handle the following conditions:no head, or no node 1, or no node 2, or node 1 is the same  to node 2*/ 
-    if (!head &&
-        (node_1 == NULL) && (node_2 == NULL) &&
+    if (!head ||
+        (node_1 == NULL) || (node_2 == NULL) ||
         (node_1 == node_2))
         return head;
 
